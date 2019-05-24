@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Componet_Input_Group</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- demo: 1 -->
+		<div class="input-group w-50">
+			<div class="input-group-prepend">
+				<span class="input-group-text">http://www.github.com/project/</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter your project name..." />
+		</div>
+		<hr />
+		
+		<!-- demo: 2 -->
+		<div class="input-group w-50">
+			<input type="text" class="form-control text-right" placeholder="Enter your email..." />
+			<div class="input-group-append">
+				<span class="input-group-text">@hotmail.com.cn</span>
+			</div>
+		</div>
+		<hr />
+		
+		<!-- demo: 3 -->
+		<div class="input-group input-group-sm w-50">
+			<div class="input-group-prepend">
+				<span class="input-group-text font-weight-bold">https://</span>
+			</div>
+			<input type="text" class="form-control text-danger font-weight-bold" placeholder="Enter yourself domain..." />
+			<div class="input-group-append">
+				<span class="input-group-text font-weight-bold">.nooper.biz</span>
+			</div>
+		</div>
+		<hr />
+		
+		<!-- demo: 4 -->
+		<div class="input-group w-50">
+			<div class="input-group-prepend">
+				<span class="input-group-text font-weight-bold">MySQL</span>
+				<span class="input-group-text">+</span>
+				<span class="input-group-text font-weight-bold">Nginx</span>
+			</div>
+			<input type="text" class="form-control" placeholder="database..." />
+			<input type="text" class="form-control" placeholder="web server..." />
+		</div>
+		<hr />
+		
+		<!-- demo: 5 -->
+		<div class="input-group w-50">
+			<div class="input-group-prepend">
+				<button type="button" class="btn btn-primary font-weight-bold">Mobile</button>
+			</div>
+			<input type="text" class="form-control" placeholder="" />
+		</div>
+		<hr />
+		
+		<!-- demo: 6 -->
+		<div class="input-group w-50">
+			<input type="text" class="form-control font-weight-bold bg-dark border border-dark text-white" placeholder="Enter your email..." />
+			<div class="input-group-append">
+				<button type="button" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Select EMail Server</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">example@github.com</a>
+					<a href="#" class="dropdown-item">example@microsoft.com</a>
+					<a href="#" class="dropdown-item">example@hotmail.com</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item font-weight-bold">example@nooper.biz</a>
+				</div>
+			</div>
+		</div>
+		<hr />
+		
+		<!-- demo: 7 -->
+		<div class="input-group w-50">
+			<div class="input-group-prepend">
+				<label for="year" class="input-group-text">Select Year</label>
+			</div>
+			<select id="year" class="custom-select">
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000" selected="selected">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>
+		</div>
+		<hr />
+		
+		<!-- demo: 8 -->
+		<div class="input-group w-50">
+			<div class="input-group-prepend">
+				<label for="file" class="input-group-text bg-warning border-warning">Primary Picture</label>
+			</div>
+			<div class="custom-file">
+				<input id="file" type="file" class="custom-file-input" placeholder="Choose file..."/>
+				<label for="file" class="custom-file-label">Browse</label>
+			</div>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//
+	});
+</script>
+
+
+
+
+
+
+
+
+
+

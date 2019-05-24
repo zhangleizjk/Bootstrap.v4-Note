@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Componet_Collapse</title>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{
+				font-family: "calibri";
+				font-size: 14px;
+			}
+			body {
+				padding: 20px;
+			}
+		</style>
+		<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./js/popper.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- demo: 1 -->
+		<a href="#boolean" class="btn btn-warning" data-toggle="collapse">
+			<strong>Boolean DataType</strong>
+		</a>
+		<button class="btn btn-danger" data-toggle="collapse" data-target="#boolean">
+			<strong>Boolean DataType</strong>
+		</button>
+		<div id="boolean" class="collapse mt-2">
+			<div class="card card-body">
+				This is the simplest type. A boolean expresses a truth value. It can be either TRUE or FALSE. 
+			</div>
+		</div>
+		<hr />
+		
+		
+		<!-- demo: 2 -->
+		<a href=".special" class="btn btn-dark mr-1" data-toggle="collapse">Special DataType</a>
+		<a href="#resource" class="btn btn-info mr-1" data-toggle="collapse">Resource DataType</a>
+		<a href="#null" class="btn btn-info" data-toggle="collapse">Null DataType</a>
+		<div id="resource" class="collapse special mt-2">
+			<div class="card card-body">
+				A resource is a special variable, holding a reference to an external resource. 
+			</div>
+		</div>
+		<div id="null" class="collapse special mt-2">
+			<div class="card card-body">
+				The special NULL value represents a variable with no value. NULL is the only possible value of type null. 
+			</div>
+		</div>
+		<hr />
+		
+		
+		<!-- demo: 3 -->
+		<div id="operator" class="accordion">
+			<!-- card -->
+			<div class="card">
+				<div class="card-header">
+					<a href="#boolean2" class="btn btn-link" data-toggle="collapse">Boolean DataType</a>
+				</div>
+				<div id="boolean2" class="collapse show" data-parent="#operator">
+					<div class="card-body">
+						This is the simplest type. A boolean expresses a truth value. It can be either TRUE or FALSE. 
+					</div>
+				</div>
+			</div>
+			<!-- card -->
+			<div class="card">
+				<div class="card-header">
+					<a href="#resource2" class="btn btn-link collapsed" data-toggle="collapse">Resource DataType</a>
+				</div>
+				<div id="resource2" class="collapse" data-parent="#operator">
+					<div class="card-body">
+						A resource is a special variable, holding a reference to an external resource. 
+					</div>
+				</div>
+			</div>
+			<!-- card -->
+			<div class="card">
+				<div class="card-header">
+					<a href="#null2" class="btn btn-link collapsed" data-toggle="collapse">Null DataType</a>
+				</div>
+				<div id="null2" class="collapse" data-parent="#operator">
+					<div class="card-body">
+						The special NULL value represents a variable with no value. NULL is the only possible value of type null. 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+	});
+</script>

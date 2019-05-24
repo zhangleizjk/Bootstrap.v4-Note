@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Component_Nav</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+			<!-- demo: 1 -->
+			<nav class="nav justify-content-center">
+				<a href="#" class="nav-link active">Oracle</a>
+				<a href="#" class="nav-link">MySQl</a>
+				<a href="#" class="nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-link">MariaDB</a>
+				<a href="#" class="nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 2 -->
+			<nav class="nav flex-column">
+				<a href="#" class="nav-link active">Oracle</a>
+				<a href="#" class="nav-link">MySQl</a>
+				<a href="#" class="nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-link">MariaDB</a>
+				<a href="#" class="nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 3 -->
+			<nav class="nav nav-tabs">
+				<a href="#" class="nav-link">Oracle</a>
+				<a href="#" class="nav-link">MySQl</a>
+				<a href="#" class="nav-link active">Microsoft SQL Server</a>
+				<a href="#" class="nav-link">MariaDB</a>
+				<a href="#" class="nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 4 -->
+			<nav class="nav nav-pills">
+				<a href="#" class="nav-link">Oracle</a>
+				<a href="#" class="nav-link">MySQl</a>
+				<a href="#" class="nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-link active">MariaDB</a>
+				<a href="#" class="nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 5 -->
+			<nav class="nav nav-pills  nav-fill">
+				<a href="#" class="nav-item nav-link active">Oracle</a>
+				<a href="#" class="nav-item nav-link">MySQl</a>
+				<a href="#" class="nav-item nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-item nav-link">MariaDB</a>
+				<a href="#" class="nav-item nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 6 -->
+			<nav class="nav nav-pills  nav-justified">
+				<a href="#" class="nav-item nav-link active">Oracle</a>
+				<a href="#" class="nav-item nav-link">MySQl</a>
+				<a href="#" class="nav-item nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-item nav-link">MariaDB</a>
+				<a href="#" class="nav-item nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 7 -->
+			<nav class="nav nav-tabs">
+				<a href="#" class="nav-link">Oracle</a>
+				<a href="#" class="nav-link dropdown dropdown-toggle active" data-toggle="dropdown">MySQl</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">MySQL5.4</a>
+					<a href="#" class="dropdown-item">MySQL5.6</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">MySQL8.03</a>
+				</div>
+				<a href="#" class="nav-link">Microsoft SQL Server</a>
+				<a href="#" class="nav-link">MariaDB</a>
+				<a href="#" class="nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<hr />
+			
+			<!-- demo: 8 -->
+			<nav class="nav nav-tabs">
+				<a href="#oracle" class="nav-item nav-link active" data-toggle="tab" >Oracle</a>
+				<a href="#mysql" class="nav-item nav-link" data-toggle="tab">MySQL</a>
+				<a href="#msqlserver" class="nav-item nav-link" data-toggle="tab">Microsoft SQL Server</a>
+				<a href="#mariadb" class="nav-item nav-link" data-toggle="tab">MariaDB</a>
+				<a href="#" class="nav-item nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<div class="tab-content">
+				<div class="tab-pane fade show active p-5" id="oracle">Oracle DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="mysql">MySQL DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="msqlserver">Microsoft SQL Server DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="mariadb">MariaDB DataBase is here ...</div>
+			</div>
+			<hr />
+			
+			<!-- demo: 9 -->
+			<nav class="nav nav-pills">
+				<a  id="tab1" href="#oracle2" class="nav-item nav-link active" data-toggle="pill" >Oracle</a>
+				<a href="#mysql2" class="nav-item nav-link" data-toggle="pill">MySQL</a>
+				<a href="#msqlserver2" class="nav-item nav-link" data-toggle="pill">Microsoft SQL Server</a>
+				<a href="#mariadb2" class="nav-item nav-link" data-toggle="pill">MariaDB</a>
+				<a href="#" class="nav-item nav-link disabled" tabindex="-1">MongoDB</a>
+			</nav>
+			<div class="tab-content">
+				<div class="tab-pane fade show active p-5" id="oracle2">Oracle DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="mysql2">MySQL DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="msqlserver2">Microsoft SQL Server DataBase is here ...</div>
+				<div class="tab-pane fade p-5" id="mariadb2">MariaDB DataBase is here ...</div>
+			</div>
+			
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//
+	});
+</script>

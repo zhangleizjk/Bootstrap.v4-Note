@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Componet_Tooltip</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	
+		<!-- demo: 1 -->
+		<a href="#" data-toggle="tooltip" data-placement="right" title="A string is series of characters">String DataType</a>
+		<hr />
+		
+		<!-- demo: 2 -->
+		<a href="#" class="btn btn-warning" data-toggle="tooltip" title="This is the SIMPLEST type">
+			<strong>Boolean DataType</strong>
+		</a>
+		<a href="#" class="btn btn-danger" data-toggle="tooltip" data-html="true" title="This is the <b>SIMPLEST</b> type">
+			<strong>Boolean DataType</strong>
+		</a>
+		<div class="d-inline-block" data-toggle="tooltip" data-html="true" title="This is the <b>SIMPLEST</b> type">
+			<a href="#" class="btn btn-danger disabled">
+				<strong>Boolean DataType</strong>
+			</a>
+		</div>
+		<hr />
+		
+		<!-- demo: 3 -->
+		<button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="The NULL is the only value">
+			<strong>Null DataType</strong>
+		</button>
+		<button class="btn btn-info" data-toggle="tooltip" data-placement="top" data-html="true" title="The <b>NULL</b> is the only value">
+			<strong>Null DataType</strong>
+		</button>
+		<div class="d-inline-block" tabindex="0" data-toggle="tooltip" data-html="true" data-placement="top" title="The <b>NULL</b> is the only value">
+			<button type="button" class="btn btn-warning" disabled="disabled"  style="pointer-events: none;"> 
+				<strong>Null DataType</strong>
+			</button>
+		</div>
+		<hr />
+		
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// initialize tooltip
+		 $('[data-toggle="tooltip"]').tooltip()
+	});
+</script>
+
+
+
+
+
+
+
+
+
+

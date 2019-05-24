@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Component_Modal</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+			<!-- demo: 1 -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Display Nginx Dialog</button>
+			
+			<div id="modal" tabindex="-1" class="modal fade">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">What is Nginx?</h4>
+							<button type="button" class="close" data-dismiss="modal">
+								<span>&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-warning font-weight-bold" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary font-weight-bold">Details...</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+	
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//
+	});
+</script>

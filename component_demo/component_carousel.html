@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Component_Carousel</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+			<!-- demo: 1 -->
+			<div id="carousel_one" class="carousel carousel-fade slide" data-ride="carousel" style="width: 800px;">
+				<ul class="carousel-indicators">
+					<li class="active" data-target="#carousel_one" data-slide-to="0"></li>
+					<li data-target="#carousel_one" data-slide-to="1"></li>
+					<li data-target="#carousel_one" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-interval="2000">
+						<img src="./img/1.jpg" class="d-block w-100 active" alt="" />
+						<div class="carousel-caption">
+							<h2>What Is JavaScript?</h2>
+							<p>JavaScript is the subject of a fair bit of misinformation and confusion.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="./img/2.jpg" class="d-block w-100" alt="" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/3.jpg" class="d-block w-100" alt="" />
+					</div>
+				</div>
+				<a href="#carousel_one" class="carousel-control-prev" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a href="#carousel_one" class="carousel-control-next" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//
+	});
+</script>

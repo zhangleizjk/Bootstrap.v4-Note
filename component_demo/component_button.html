@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap4_Component_Button</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<style type="text/css">
+			*	{ font-family: "calibri"; font-size: 14px; }
+			body { padding: 20px; }
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/popper.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+			<!-- demo: 1 -->
+			<button type="button" class="btn btn-danger mr-2">Danger Style Button</button>
+			<a href="#" class="btn btn-warning">Anchor: Danger Style Button</a>
+			<hr />
+			
+			<!-- demo: 2 -->
+			<button type="button" class="btn btn-outline-danger mr-2">Outline: Danger Style Button</button>
+			<a href="#" class="btn btn-outline-warning">Anchor+Outline: Warning Style Button</a>
+			<hr />
+			
+			<!-- demo: 3 -->
+			<button type="button" class="btn btn-lg btn-danger mr-2">Large: Danger Style Button</button>
+			<button type="button" class="btn btn-sm btn-success font-weight-bold">Small: Warning Style Button</button>
+			<hr />
+			
+			<!-- demo: 4 -->
+			<button type="button" class="btn btn-block btn-lg btn-danger">Large+Block: Danger Style Button</button>
+			<hr />
+			
+			<!-- demo: 5 -->
+			<button type="button" class="btn btn-warning  mr-2">Warning Style Button</button>
+			<button type="button" class="btn btn-warning active">Active: Warning Style Button</button>
+			<hr />
+			
+			<!-- demo: 6 -->
+			<button type="button" class="btn btn-warning mr-2">Warning Style Button</button>
+			<button type="button" class="btn btn-warning" disabled="disabled">Disabled: Warning Style Button</button>
+			<a href="#" class="btn btn-warning disabled" tabindex="-1">Anchor+Disabled: Warning Style Button</a>
+			<hr />
+			
+			<!-- demo: 7 -->
+			<button type="button" class="btn btn-success" data-toggle="button">Toggle: Success Style Button</button>
+			<hr />
+			
+			<!-- demo: 8 -->
+			<form method="get">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-primary">
+					<input type="checkbox" name="database[]" value="oracle" />Oracle
+				</label>
+				<label class="btn btn-primary">
+					<input type="checkbox" name="database[]" value="mysql" />MySQL
+				</label>
+				<label class="btn btn-primary">
+					<input type="checkbox" name="database[]" value="sqlserver" />SQLServer
+				</label>
+				<label class="btn btn-primary">
+					<input type="checkbox" name="database[]" value="mongodb" />MongoDB
+				</label>
+			</div>
+			<button class="btn btn-warning" type="submit">Go</button>
+			</form>
+			<hr />
+			
+			<!-- demo: 9 -->
+			<form method="get">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-success">
+					<input type="radio" name="database" value="oracle" />Oracle
+				</label>
+				<label class="btn btn-success">
+					<input type="radio" name="database" value="mysql" />MySQL
+				</label>
+				<label class="btn btn-success">
+					<input type="radio" name="database" value="sqlserver" />SQLServer
+				</label>
+				<label class="btn btn-success">
+					<input type="radio" name="database" value="mongodb" />MongoDB
+				</label>
+			</div>
+			<button class="btn btn-warning" type="submit">Go</button>
+			</form>
+			
+	</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//
+	});
+</script>
